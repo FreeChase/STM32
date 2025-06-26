@@ -1,0 +1,19 @@
+{
+    "files.associations": {
+        "freertos.h": "c",
+        "task.h": "c",
+        "circlebuf_x.h": "c",
+        "usertask.h": "c",
+        "main.h": "c",
+        "shell.h": "c",
+        "xstatemach.h": "c"
+    },
+    "files.exclude": {
+        "*.ioc": true,
+        "MDK-ARM/mcuf405":true,
+    },
+    "search.exclude": {
+        "*.ioc": true,
+        "MDK-ARM/mcuf405":true,
+    }
+}

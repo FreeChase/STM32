@@ -1,0 +1,19 @@
+md 0x080e0000 128 1     									//显示flash
+InnerFlashSelfIncWrite "YYYNNNYYYYYYYYYYNYYY" 20   			//flash 写操作
+
+SendKeyEvent 1												//按键读操作
+SendKeyEvent 7												//按键测试操作
+SendKeyEvent 3												//按键清除操作
+UartTestPut	1 8												//串口1(0开始) 写循环8次
+
+
+
+UartTestPut	1 8												//串口1(0开始) 写循环8次
+SendKeyEvent 7												//按键测试操作
+
+
+
+GetTestResult
+
+
+UartPutStr 4 "ZSCSM,VER,2,1*FC\r\n"
